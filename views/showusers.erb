@@ -1,6 +1,19 @@
 
-<table class="table">
-  
+<table class="table table-striped">
+
+
+    <thead>
+   <tr>
+        <th>Name></th>
+        <th>telepPhone</th>
+        <th>Date</th>
+        <th>Parikmaher</th>
+        <th>Cvet</th>
+       
+      </tr>
+    </thead>
+
+    <body>
     <% @results.each do |row| %>
       <tr>
         <td><%= row['username'] %></td>
@@ -12,5 +25,5 @@
       </tr>
     <% end %>
  
-
+  </body>
 </table>
